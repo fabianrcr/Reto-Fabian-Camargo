@@ -5,5 +5,11 @@ Feature: Academy Choucair
   @scenario1
   Scenario: search fot a automation course
     Given than brandon wants to learn automation at the acedemy Choucair
-    When he search for the curse Recuros Automaticazción Bancolombia on the choucair academy platform
-    Then he finds the course called resources Recursos Automatización Bancolombia
+    | strUser | strPassword |
+    | 1058325293 | Choucair2021* |
+    When he search for the course Foundation Express on the choucair academy platform
+    | strCourse |
+    | Foundation Express |
+    Then he finds the course called
+    | strCourse |
+    | Foundation Express |
